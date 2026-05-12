@@ -9,7 +9,7 @@ const categories = [
   },
   {
     category: 'Food',
-    items: ['Pre-cooked Meal', 'Frozen Fried Chicken', 'Coke', 'Protein Powder', 'Fruit']
+    items: ['Pre-cooked Meal', 'Frozen Chicken', 'Coke', 'Protein Powder', 'Fruit']
   },
   {
     category: 'Accessories',

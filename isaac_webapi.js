@@ -1,13 +1,24 @@
-const categories = require('category.js');
+const categories = require('./category.js');
 
 module.exports = {
-    // Return all the categories
-    getAllCategories() {
-        let results = categories.find();
-        return results
+    //Return categories with items
+    getAll() {
+        return categories;
     },
-    // Explain what function B does
-    functionB() {
-        console.log("Hello function B");
-    }
+    // Return only categories
+    getAllCategories() {
+        return categories.map(i => i.category);
+    },
+    // Return only items
+    getAllItems() {
+        return categories.map(i => i.items);
+    },
+    // Return categories with specific name
+    getSpecificCategory(e) {
+        return categories.filter(i => i.category.includes(e));
+    },
+    // Return category with specific item
+    getCategoryWithItem(e) {
+        return categories.filter(i => i.items.includes(e));
+    },
 }
