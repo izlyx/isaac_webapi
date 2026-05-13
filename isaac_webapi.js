@@ -63,7 +63,7 @@ module.exports = {
         }
     },
     // 10. Return item count by category
-    getItemCountByCategory() {
+    getTotalItemByCategory() {
         return categories.map( i => ({
             category: i.category,
             items: i.items.length
