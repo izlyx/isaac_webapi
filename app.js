@@ -12,4 +12,3 @@ console.log(fn.getAllCategories());
 fn.addItem('Toys', 'Action Figure');
 console.log(fn.getAllItems());
 console.log(fn.getTotalItemByCategory());
-console.log(fn.getAll());

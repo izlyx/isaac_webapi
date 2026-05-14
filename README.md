@@ -47,6 +47,7 @@ Since **getSpecificItem( )** takes data from items and has nesting, **flatMap( )
 **addCategory( )** and **addItem( )** functions may look different but the concept is the same. Both uses **find( )** to find the value of the category or item it is trying to add and the **if loop** to *check if the category or item exists already* before adding it and pushing it after if it *does not exist*.
 
 **find( )** - *same function as filter( ) but instead of returning all the items, it returns only the first item*
+
 **push( )** - *used to add data into an array*
 
 For **addCategory( )** a value is required for find for the category with that value and **!** is used to make sure *it is not that value*. Then the **if loop** works if the value *does not exist* and pushes the value and creates a new category and item array.
